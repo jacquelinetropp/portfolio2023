@@ -1,0 +1,142 @@
+.skill{
+    padding: 0 2rem 2rem 2rem;    
+    overflow: hidden;
+    background-color: #0f1126;
+  
+    h2 {
+      grid-column: 1/-1;
+      text-align: center;
+    }
+
+    h2, h4 {
+      color: $color__background-body;
+    }
+
+    @media only screen and (max-width: 768px) {
+      padding: 0 .5rem .5rem .5rem;    
+    }
+  
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+    perspective: 1000px;
+    margin: 1rem;
+    justify-self: center;
+  
+    @media only screen and (max-width: 768px) {
+      width: 80px;
+      height: 80px;
+    }
+
+    @media only screen and (max-width: 425px) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  
+    transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotate3d(45, 6, 6, 180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px 10px;
+  }
+  
+  .flip-card-front {
+    background-color: $color-primary;
+    color: black;
+  
+    .img {
+      width: 70px;
+  
+      @media only screen and (max-width: 768px) {
+        width: 50px;
+      }
+    }
+  }
+  
+  .flip-card-back {
+    background-color: $color-primary;
+    color: white;
+    transform: rotate3d(45, 6, 6, 180deg);
+    display: flex;
+    align-content: center;
+  
+    p {
+      color: $color-primary;
+      font-size: 16px;
+    }
+  }
+  .flip-card-outer {
+    width: 100px;
+    height: 100px;
+    background-color: $color-tertiaryLight;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 30px;
+  
+    @media only screen and (max-width: 768px) {
+      width: 100px;
+      height: 100px;
+    }
+
+    @media only screen and (max-width: 425px) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  .skill__icon {
+    font-size: 45px;
+    display: flex;
+
+    @media only screen and (max-width: 425px) {
+      width: 50%;
+    }
+  }
+
+  .skilldiv, .tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
+
+    
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    @media only screen and (max-width: 425px) {
+      grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+      grid-gap: 3px;
+    }
+
+    h4 {
+      grid-column: 1/-1;
+      text-align: center;
+    }
+  }

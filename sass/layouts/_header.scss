@@ -1,0 +1,30 @@
+.site-header {
+    display: flex;
+    // grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-color: $color__background-body;
+
+    &__button {
+        justify-self: end;
+        margin-right: 2rem;
+    }
+
+}
+
+.site-branding {
+    margin-left: 2rem;
+}
+
+.logo {
+    width: 255px;
+}
+
+#primary-menu {
+    justify-content: end;
+
+    a {
+    color: $color-primary; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    }
+}

@@ -1,0 +1,46 @@
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+    background-color: $color-tertiary;
+
+    &__header {
+        grid-column: 1/-1;
+        text-align: center;
+    }
+}
+
+.project {
+    color: white;
+    &__img {
+        background-color: $color-secondary;
+        border-radius: 10px;
+    }
+
+    &__description {
+        p {
+            margin: 5px 0;
+        }
+    }
+
+    &__icons {
+        display: flex;
+
+        img {
+            height: 25px;
+            margin-right: 3px;
+            background-color: white;
+            border-radius: 50%;
+            padding: 5px;
+        }
+    }
+
+    &__links {
+        a {
+            color: $color-primary;
+        }
+    }
+
+  
+}
