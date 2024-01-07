@@ -732,9 +732,67 @@ textarea {
   .contact .wpcf7-form-control {
     width: 100%; }
 
+.site-footer {
+  background-color: #0E1144;
+  color: white;
+  text-align: right;
+  padding-right: 10px; }
+
 .hero {
   background: linear-gradient(to left, rgba(14, 17, 68, 0.9), rgba(14, 17, 68, 0.85)), url("assets/hero.jpg") no-repeat top center;
-  height: 40vh; }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  padding: 2.2rem 0;
+  color: white; }
+  .hero__img {
+    margin: 0 auto; }
+    .hero__img img {
+      height: 20rem; }
+
+.about {
+  background-color: #121429;
+  padding: 3rem 0; }
+  .about__div {
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+  .about__item {
+    color: white;
+    padding: 1rem; }
+  .about__icondiv {
+    position: relative;
+    height: 90px;
+    width: 90px; }
+    .about__icondiv__outer {
+      display: flex;
+      justify-content: center; }
+    .about__icondiv__inner {
+      background-color: #06b791;
+      z-index: 1;
+      border-radius: 10%;
+      padding: 0.5rem;
+      height: 90px;
+      width: 90px;
+      position: relative; }
+  .about__iconBehind {
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #2d305a;
+    border-radius: 10%; }
+  .about__icon {
+    font-size: 10px;
+    fill: white !important;
+    color: white !important;
+    background-color: #06b791; }
+  .about__title {
+    text-align: center; }
+  .about__description {
+    font-size: 12px; }
 
 /*--------------------------------------------------------------
 # Components

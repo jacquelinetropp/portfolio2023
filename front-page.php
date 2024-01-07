@@ -1,7 +1,19 @@
 <?php get_header() ?>
 
 <section class="hero">
+    <div class="hero__img">
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/headshot.png" alt="headshot of Jacqueline">
+    </div>
+    <div class="hero__description">
+        <p>Hi, I'm</p>
+        <h1>Jacqueline Tropp </h1>
+        <p>Frontend Developer and Designer<p>
+    </div>
 
+</section>
+
+<section class="about">
+    <?php get_template_part('template-parts/about') ?>
 </section>
 
 <section class="projects" id="projects">

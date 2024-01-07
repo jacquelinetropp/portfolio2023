@@ -22,6 +22,8 @@
 
 .site-footer {
 	grid-area: footer;
+	background-color: $color-tertiary;
+	text-align: right;
 }
 
 @import "no-sidebar";

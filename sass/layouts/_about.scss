@@ -1,0 +1,62 @@
+.about {
+    background-color: $color-tertiaryDark;
+    padding: 3rem 0;
+
+    &__div {
+        width: 75%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__item {
+        color: white;
+        padding: 1rem;
+    }
+
+    &__icondiv {
+        position: relative;
+        height: 90px;
+        width: 90px; 
+
+        &__outer {
+            display: flex;
+        justify-content: center;
+        }
+
+        &__inner {
+        background-color: $color-primary;
+        z-index: 1;
+        border-radius: 10%;
+        padding: 0.5rem;
+        height: 90px;
+        width: 90px; 
+        position: relative;}
+    }
+
+    &__iconBehind { 
+            height: 90px;
+            width: 90px;
+            position: absolute;
+            top: -10px; 
+            right: -10px;
+            background-color: #2d305a;
+            border-radius: 10%;
+        }
+
+    &__icon {
+        font-size: 10px;
+        fill: white !important;
+        color: white !important;
+        background-color: $color-primary;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__description {
+        font-size: 12px;
+    }
+
+}
