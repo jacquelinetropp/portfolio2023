@@ -691,17 +691,34 @@ textarea {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
-  padding: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
   background-color: #0E1144; }
   .projects__header {
     grid-column: 1/-1;
     text-align: center; }
+  .projects__hidden {
+    max-height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; }
+  .projects__shown {
+    grid-column: 1/-1;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    max-height: fit-content;
+    opacity: 1; }
 
 .project {
   color: white; }
   .project__img {
     background-color: #8EA1AB;
-    border-radius: 10px; }
+    border-radius: 10px;
+    height: 200px; }
+    .project__img img {
+      max-height: 200px;
+      display: flex;
+      margin: 0 auto; }
   .project__description p {
     margin: 5px 0; }
   .project__icons {
@@ -714,6 +731,10 @@ textarea {
       padding: 5px; }
   .project__links a {
     color: #06b791; }
+  .project__button {
+    grid-column: 1/-1;
+    width: 25%;
+    margin: 0 auto; }
 
 .contact {
   background-color: #0E1144; }

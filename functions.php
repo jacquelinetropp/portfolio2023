@@ -142,6 +142,7 @@ function designsbyjt2_scripts() {
 	wp_style_add_data( 'designsbyjt2-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'designsbyjt2-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'designsbyjt2-button', get_template_directory_uri() . '/js/button.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

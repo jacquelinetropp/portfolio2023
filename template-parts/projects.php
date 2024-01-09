@@ -42,8 +42,7 @@
 
 <div class="project">
     <div class="project__img">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/backpackingbuddies.png"
-            alt="Backpacking Buddies homepage view" />
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/backpackingbuddies.png" alt="Backpacking Buddies homepage view" />
     </div>
     <div class="project__title">
         <h4> Backpacking Buddies </h4>
@@ -65,8 +64,7 @@
 
 <div class="project">
     <div class="project__img">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/backpackingbuddies.png"
-            alt="Senior connect homepage view" />
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/backpackingbuddies.png" alt="Senior connect homepage view" />
     </div>
     <div class="project__title">
         <h4> Senior Connect </h4>
@@ -124,3 +122,88 @@
         <a href="https://worldrecipedatabase.onrender.com">Demo</a>
     </div>
 </div>
+
+<div class="projects__hidden" id="hiddenProjects">
+    <div class="project">
+        <div class="project__img">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/productivity.png" alt="Prime Planner homepage view" />
+        </div>
+        <div class="project__title">
+            <h4> Ultimate Planner </h4>
+        </div>
+        <div class="project__description">
+            <p>Designed for organizing projects with their tasks</p>
+        </div>
+        <div class="project__icons">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/icons/react.png" />
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/icons/fire.png" />
+        </div>
+        <div class="project__links">
+            <a href="https://github.com/jacquelinetropp/ultimateplanner2">Github</a>
+            <a href="https://ultimateplanner.onrender.com/">Demo</a>
+        </div>
+    </div>
+
+    <div class="project">
+        <div class="project__img">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/bathbombs.png" alt="Natural Bath Bomb's homepage view" />
+        </div>
+        <div class="project__title">
+            <h4> Natural Bath Bombs </h4>
+        </div>
+        <div class="project__description">
+            <p>An e-commerce site for buying merchandise</p>
+        </div>
+        <div class="project__icons">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/icons/react.png" />
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/icons/fire.png" />
+        </div>
+        <div class="project__links">
+            <a href="https://github.com/jacquelinetropp/bathbombs">Github</a>
+            <a href="https://naturalbathbombs.herokuapp.com/">Demo</a>
+        </div>
+    </div>
+
+    <div class="project">
+        <div class="project__img">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/blog.png" alt="Blog homepage view" />
+        </div>
+        <div class="project__title">
+            <h4> Traveler's Blog </h4>
+        </div>
+        <div class="project__description">
+            <p>A wordpress site designed for a lifestyle blogger</p>
+        </div>
+        <div class="project__icons">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/icons/wordpress.png" />
+        </div>
+        <div class="project__links">
+            <a href="https://github.com/jacquelinetropp/jacquelinetropp">Github</a>
+            <a href="https://www.jacquelinetropp.com/">Demo</a>
+        </div>
+    </div>
+
+    <div class="project">
+        <div class="project__img">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/weather.png" alt="Weather homepage view" />
+        </div>
+        <div class="project__title">
+            <h4> Weather Tracker </h4>
+        </div>
+        <div class="project__description">
+            <p>See current and future weather forecasts</p>
+        </div>
+        <div class="project__icons">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/icons/react.png" />
+        </div>
+        <div class="project__links">
+            <a href="https://github.com/jacquelinetropp/weathertracker">Github</a>
+            <a href="https://weathertracking.onrender.com/">Demo</a>
+        </div>
+    </div>
+
+</div>
+
+<button id="toggleButton" class="project__button">
+    Show More
+</button>
