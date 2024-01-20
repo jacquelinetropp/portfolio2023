@@ -5,6 +5,15 @@
     padding: 1rem 1rem 2rem 1rem;
     background-color: $color-tertiary;
 
+    @media only screen and (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);  
+      }
+
+      @media only screen and (max-width: 500px) {
+        grid-template-columns: repeat(1, 1fr);  
+        grid-gap: 1.3rem;
+      }
+
     &__header {
         grid-column: 1/-1;
         text-align: center;
@@ -24,6 +33,15 @@
         grid-template-columns: repeat(3, 1fr);
         max-height: fit-content;
         opacity: 1;
+
+        @media only screen and (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);  
+          }
+
+          @media only screen and (max-width: 500px) {
+            grid-template-columns: repeat(1, 1fr);  
+            grid-gap: 1.3rem;
+          }
     }
 }
 
@@ -34,10 +52,18 @@
         border-radius: 10px;
         height: 200px;
 
+        @media only screen and (max-width: 768px) {
+            height: 150px;
+          }
+
         img {
             max-height: 200px;
             display: flex;
             margin: 0 auto;
+
+            @media only screen and (max-width: 768px) {
+                height: 150px;
+              }
         }
     }
 
@@ -62,6 +88,11 @@
     &__links {
         a {
             color: $color-primary;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: #fff;
         }
     }
 
@@ -69,6 +100,13 @@
         grid-column: 1/-1;
         width: 25%;
         margin: 0 auto;
+        background-color: #313562;
+        color: white;
+        border: none;
+
+        @media only screen and (max-width: 500px) {
+            width: 50%; 
+          }
     }
 
   

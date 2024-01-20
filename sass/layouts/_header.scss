@@ -2,7 +2,7 @@
     display: flex;
     // grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    background-color: $color__background-body;
+    background-color: $color-tertiary;
 
     &__button {
         justify-self: end;
@@ -27,4 +27,21 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     }
+}
+
+//mobile menu
+.mob-menu-header-holder {
+    background-color: $color-tertiary;
+}
+
+.mob-icon-menu {
+    color: white !important;
+}
+
+.mob-menu-right-bg-holder {
+    background-color: $color-tertiary;
+}
+
+.mob-cancel-button {
+    color: white !important;
 }

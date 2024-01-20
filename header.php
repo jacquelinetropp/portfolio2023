@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The header for our theme
  *
@@ -12,11 +13,15 @@
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
+
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -28,7 +33,7 @@
 		<header id="masthead" class="site-header">
 			<div class="site-branding">
 				<a href="/">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/logo.png" alt="logo saying Jacqueline Tropp" class="logo" />
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/logo3.png" alt="logo saying Jacqueline Tropp" class="logo" />
 				</a>
 			</div><!-- .site-branding -->
 

@@ -372,7 +372,8 @@ h3,
 h4,
 h5,
 h6 {
-  clear: both; }
+  clear: both;
+  font-family: 'Nunito Sans', sans-serif; }
 
 p {
   margin-bottom: 1.5em; }
@@ -471,9 +472,9 @@ table {
 a {
   color: #4169e1; }
   a:visited {
-    color: #800080; }
+    color: #06b791; }
   a:hover, a:focus, a:active {
-    color: #191970; }
+    color: #fff; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -560,11 +561,12 @@ textarea {
   .skill h2 {
     grid-column: 1/-1;
     text-align: center; }
-  .skill h2, .skill h4 {
+  .skill h2,
+  .skill h4 {
     color: #fff; }
   @media only screen and (max-width: 768px) {
     .skill {
-      padding: 0 .5rem .5rem .5rem; } }
+      padding: 0 0.5rem 0.5rem 0.5rem; } }
 
 .flip-card {
   background-color: transparent;
@@ -624,8 +626,14 @@ textarea {
   display: flex;
   align-content: center; }
   .flip-card-back p {
-    color: #06b791;
+    color: white;
     font-size: 16px; }
+    @media only screen and (max-width: 768px) {
+      .flip-card-back p {
+        font-size: 14px; } }
+    @media only screen and (max-width: 425px) {
+      .flip-card-back p {
+        font-size: 12px; } }
 
 .flip-card-outer {
   width: 100px;
@@ -652,24 +660,28 @@ textarea {
     .skill__icon {
       width: 50%; } }
 
-.skilldiv, .tools {
+.skilldiv,
+.tools {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(105px, 1fr)); }
   @media only screen and (max-width: 768px) {
-    .skilldiv, .tools {
+    .skilldiv,
+    .tools {
       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); } }
   @media only screen and (max-width: 425px) {
-    .skilldiv, .tools {
+    .skilldiv,
+    .tools {
       grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
       grid-gap: 3px; } }
-  .skilldiv h4, .tools h4 {
+  .skilldiv h4,
+  .tools h4 {
     grid-column: 1/-1;
     text-align: center; }
 
 .site-header {
   display: flex;
   align-items: center;
-  background-color: #fff; }
+  background-color: #0E1144; }
   .site-header__button {
     justify-self: end;
     margin-right: 2rem; }
@@ -687,12 +699,31 @@ textarea {
     font-family: 'Poppins', sans-serif;
     font-weight: 600; }
 
+.mob-menu-header-holder {
+  background-color: #0E1144; }
+
+.mob-icon-menu {
+  color: white !important; }
+
+.mob-menu-right-bg-holder {
+  background-color: #0E1144; }
+
+.mob-cancel-button {
+  color: white !important; }
+
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   padding: 1rem 1rem 2rem 1rem;
   background-color: #0E1144; }
+  @media only screen and (max-width: 768px) {
+    .projects {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media only screen and (max-width: 500px) {
+    .projects {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 1.3rem; } }
   .projects__header {
     grid-column: 1/-1;
     text-align: center; }
@@ -708,6 +739,13 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
     max-height: fit-content;
     opacity: 1; }
+    @media only screen and (max-width: 768px) {
+      .projects__shown {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media only screen and (max-width: 500px) {
+      .projects__shown {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1.3rem; } }
 
 .project {
   color: white; }
@@ -715,10 +753,16 @@ textarea {
     background-color: #8EA1AB;
     border-radius: 10px;
     height: 200px; }
+    @media only screen and (max-width: 768px) {
+      .project__img {
+        height: 150px; } }
     .project__img img {
       max-height: 200px;
       display: flex;
       margin: 0 auto; }
+      @media only screen and (max-width: 768px) {
+        .project__img img {
+          height: 150px; } }
   .project__description p {
     margin: 5px 0; }
   .project__icons {
@@ -730,11 +774,20 @@ textarea {
       border-radius: 50%;
       padding: 5px; }
   .project__links a {
-    color: #06b791; }
+    color: #06b791;
+    font-weight: 500; }
+  .project__links a:hover {
+    color: #fff; }
   .project__button {
     grid-column: 1/-1;
     width: 25%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    background-color: #313562;
+    color: white;
+    border: none; }
+    @media only screen and (max-width: 500px) {
+      .project__button {
+        width: 50%; } }
 
 .contact {
   background-color: #0E1144; }
@@ -747,7 +800,8 @@ textarea {
     text-align: center; }
   .contact input, .contact textarea {
     background-color: #313562;
-    border: none; }
+    border: none;
+    color: white; }
   .contact label {
     color: white; }
   .contact .wpcf7-form-control {
@@ -762,23 +816,76 @@ textarea {
 .hero {
   background: linear-gradient(to left, rgba(14, 17, 68, 0.9), rgba(14, 17, 68, 0.85)), url("assets/hero.jpg") no-repeat top center;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
-  padding: 2.2rem 0;
+  padding: 2.2rem;
   color: white; }
+  @media only screen and (max-width: 768px) {
+    .hero {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 4rem 1.5rem 1.5rem 1.5rem; } }
   .hero__img {
-    margin: 0 auto; }
+    margin: 0 auto;
+    grid-column: 1/2; }
+    @media only screen and (max-width: 768px) {
+      .hero__img {
+        grid-column: 1/-1; } }
     .hero__img img {
-      height: 20rem; }
+      max-height: 40vh; }
+      @media only screen and (max-width: 768px) {
+        .hero__img img {
+          max-height: 30vh; } }
+  .hero__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 2/-1;
+    padding-left: 2rem; }
+    @media only screen and (max-width: 768px) {
+      .hero__description {
+        grid-column: 1/-1;
+        text-align: center;
+        padding-left: 0; } }
+    .hero__description p,
+    .hero__description h1 {
+      margin: 0; }
+
+#intro {
+  font-size: 25px; }
+  @media only screen and (max-width: 768px) {
+    #intro {
+      font-size: 20px; } }
+
+#name {
+  font-size: 35px; }
+  @media only screen and (max-width: 768px) {
+    #name {
+      font-size: 30px; } }
+
+#job {
+  font-size: 30px; }
+  @media only screen and (max-width: 768px) {
+    #job {
+      font-size: 25px; } }
 
 .about {
   background-color: #121429;
-  padding: 3rem 0; }
+  padding: 3rem 0 2rem 0; }
+  @media only screen and (max-width: 425px) {
+    .about {
+      padding: 1.5rem 0 1rem 0; } }
   .about__div {
     width: 75%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr); }
+    @media only screen and (max-width: 768px) {
+      .about__div {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%; } }
+    @media only screen and (max-width: 425px) {
+      .about__div {
+        grid-template-columns: repeat(1, 1fr); } }
   .about__item {
     color: white;
     padding: 1rem; }
@@ -786,6 +893,10 @@ textarea {
     position: relative;
     height: 90px;
     width: 90px; }
+    @media only screen and (max-width: 425px) {
+      .about__icondiv {
+        height: 70px;
+        width: 70px; } }
     .about__icondiv__outer {
       display: flex;
       justify-content: center; }
@@ -797,6 +908,10 @@ textarea {
       height: 90px;
       width: 90px;
       position: relative; }
+      @media only screen and (max-width: 425px) {
+        .about__icondiv__inner {
+          height: 70px;
+          width: 70px; } }
   .about__iconBehind {
     height: 90px;
     width: 90px;
@@ -805,6 +920,10 @@ textarea {
     right: -10px;
     background-color: #2d305a;
     border-radius: 10%; }
+    @media only screen and (max-width: 425px) {
+      .about__iconBehind {
+        height: 70px;
+        width: 70px; } }
   .about__icon {
     font-size: 10px;
     fill: white !important;
@@ -814,6 +933,11 @@ textarea {
     text-align: center; }
   .about__description {
     font-size: 12px; }
+  .about__resume {
+    grid-column: 1/-1;
+    text-align: center; }
+    .about__resume h3 {
+      font-size: 24px; }
 
 /*--------------------------------------------------------------
 # Components

@@ -1,7 +1,7 @@
 <h2 class="projects__header headers">Projects</h2>
 <div class="project">
     <div class="project__img">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/covid.png" alt="vaccine toolkit image" />
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/covidCropped.png" alt="vaccine toolkit image" />
     </div>
     <div class="project__title">
         <h4> Covid Vaccine Toolkit </h4>
@@ -22,7 +22,7 @@
 </div>
 <div class="project">
     <div class="project__img">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/covid.png" alt="prime planner homepage view" />
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/primePlanner2022.png" alt="prime planner homepage view" />
     </div>
     <div class="project__title">
         <h4> Prime Planner </h4>
@@ -64,7 +64,7 @@
 
 <div class="project">
     <div class="project__img">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/backpackingbuddies.png" alt="Senior connect homepage view" />
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/seniorConnectCropped.png" alt="Senior connect homepage view" />
     </div>
     <div class="project__title">
         <h4> Senior Connect </h4>
@@ -84,7 +84,7 @@
 
 <div class="project">
     <div class="project__img">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/func-move.png" alt="Func Move homepage view" />
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/funcmove2.png" alt="Func Move homepage view" />
     </div>
     <div class="project__title">
         <h4> Func Move </h4>
@@ -98,14 +98,14 @@
         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/icons/fire.png" />
     </div>
     <div class="project__links">
-        <a href="https://github.com/jacquelinetropp/worldwiderecipes">Github</a>
-        <a href="https://worldrecipedatabase.onrender.com">Demo</a>
+        <a href="https://github.com/jacquelinetropp/online-training">Github</a>
+        <a href="https://funcmove.onrender.com/">Demo</a>
     </div>
 </div>
 
 <div class="project">
     <div class="project__img">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/recipe.png" alt="World Recipe homepage view" />
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/recipeCropped.png" alt="World Recipe homepage view" />
     </div>
     <div class="project__title">
         <h4> World Recipe </h4>

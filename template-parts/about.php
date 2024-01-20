@@ -58,4 +58,8 @@
             <p class="about__description">Maintain the upkeep of your website to ensure it continues to run smoothly
         </div>
     </div>
+
+    <div class="about__resume">
+        <a href="http://localhost/wordpress/wp-content/uploads/2024/01/Tropp-2023-Resume.pdf" target="_blank"><h3>Download Jacqueline's Resume</h3></a>
+    </div>
 </div>

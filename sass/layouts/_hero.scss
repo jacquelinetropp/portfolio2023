@@ -1,16 +1,76 @@
 .hero {
-    background: linear-gradient(to left, rgba(14,17,68,.9), rgba(14,17,68,.85)), url("assets/hero.jpg") no-repeat top center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-    padding: 2.2rem 0;
-    color: white;
-    
-    &__img {
-        margin: 0 auto;
-        img {
-            height: 20rem;
-        }
+  background: linear-gradient(
+      to left,
+      rgba(14, 17, 68, 0.9),
+      rgba(14, 17, 68, 0.85)
+    ),
+    url('assets/hero.jpg') no-repeat top center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 2.2rem;
+  color: white;
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 4rem 1.5rem 1.5rem 1.5rem;
+  }
+  
+
+  &__img {
+    margin: 0 auto;
+    grid-column: 1/2;
+    @media only screen and (max-width: 768px) {
+      grid-column: 1/-1;
+    }
+    img {
+      max-height: 40vh;
+      @media only screen and (max-width: 768px) {
+        max-height: 30vh;
+      }
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 2/-1;
+    padding-left: 2rem;
+
+    @media only screen and (max-width: 768px) {
+      grid-column: 1/-1;
+      text-align: center;
+      padding-left: 0;
     }
 
+    p,
+    h1 {
+      margin: 0;
+    }
+  }
+}
+
+#intro {
+  font-size: 25px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+#name {
+  font-size: 35px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 30px;
+  }
+}
+
+#job {
+  font-size: 30px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 25px;
+  }
 }

@@ -5,9 +5,9 @@
         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/headshot.png" alt="headshot of Jacqueline">
     </div>
     <div class="hero__description">
-        <p>Hi, I'm</p>
-        <h1>Jacqueline Tropp </h1>
-        <p>Frontend Developer and Designer<p>
+        <p id="intro">Hi. I'm</p>
+        <h1 id="name">Jacqueline Tropp, </h1>
+        <p id="job">A frontend developer and designer<p>
     </div>
 
 </section>
